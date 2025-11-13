@@ -1,0 +1,11 @@
+.Suites {
+  padding: 0px 24px;
+  justify-content: space-around;
+  max-width: 1500px;
+}
+
+.Suites h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}

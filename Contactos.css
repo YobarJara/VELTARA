@@ -1,0 +1,41 @@
+/* CONTACTANOS */
+.Contactos {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.Contactos h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Contactos h3 {
+  text-align: center;
+}
+
+.contactos-texto {
+}
+
+.contactos-contenido {
+  flex: 1;
+  max-width: 350px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+button {
+  background-color: #c8aa5b;
+  color: black;
+  font-weight: bold;
+  border: 1.5px;
+  padding: 15px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}

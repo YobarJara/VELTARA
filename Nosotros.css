@@ -1,0 +1,67 @@
+.Nosotros {
+  padding: 50px 24px;
+  background-color: #ffffff;
+}
+
+/*GENERAL NOSOTROS*/
+.div-general-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 1500px;
+  margin: 20px;
+  gap: 40px; /*Espacion entre los secciones*/
+  width: 100%;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision {
+  text-align: center;
+  background-color: #081c40;
+  padding: 20px 30px;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision {
+  padding: 20px 30px;
+  flex: 1; /* Permite que ambos crezcan y encojan si es necesario */
+  min-width: 0; /* Asegura que el contenido muy largo no rompa la distribución */
+}
+
+/*NOSOTROS VIDEO - VISION*/
+.div-video-vision-container {
+  display: flex; /* Alinea los elementos hijos horizontalmente */
+  justify-content: space-between; /* Distribuye el espacio entre ellos */
+  align-items: stretch;
+  align-items: flex-start; /* Alinea por arriba, útil si tienen diferente altura */
+  max-width: 1500px; /* Mantén el ancho máximo para centrarlo si es necesario */
+  margin: 20px; /* Centra el contenedor y añade margen */
+  gap: 40px; /* Espacio entre el video y la visión */
+}
+
+.div-nosotros-video,
+.div-nosotros-vision {
+  flex: 1; /* Permite que ambos crezcan y encojan si es necesario */
+  min-width: 0;
+}
+
+.div-nosotros-vision {
+  padding: 65px 20px; /* Padding interior */
+  flex-direction: column;
+  justify-content: center;
+}

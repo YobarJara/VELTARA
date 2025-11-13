@@ -1,0 +1,17 @@
+.habitaciones {
+  padding: 0px 24px;
+  justify-content: space-around;
+  max-width: 1500px;
+}
+
+.habitaciones h1,
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.habitacion-deluxe {
+  display: block;
+  gap: 2.5rem;
+}
