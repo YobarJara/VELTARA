@@ -1,0 +1,146 @@
+.Nosotros {
+  background-color: #ffffff;
+}
+
+/*GENERAL NOSOTROS*/
+.div-general-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 1.8rem 0 0.6rem 0;
+  gap: 40px; /*Espacion entre los secciones*/
+  width: 100%;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision {
+  text-align: center;
+  background-color: #081c40;
+  padding: 20px 30px;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision,
+.div-nosotros-vision p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.div-nosotros-texto,
+.div-nosotros-mision {
+  padding: 20px 30px;
+  flex: 1; /* Permite que ambos crezcan y encojan si es necesario */
+  min-width: 0; /* Asegura que el contenido muy largo no rompa la distribución */
+}
+
+/*NOSOTROS VIDEO - VISION*/
+.div-video-vision-container {
+  display: flex; /* Alinea los elementos hijos horizontalmente */
+  justify-content: space-between; /* Distribuye el espacio entre ellos */
+  align-items: stretch;
+  align-items: flex-start; /* Alinea por arriba, útil si tienen diferente altura */
+  margin: 20px; /* Centra el contenedor y añade margen */
+  gap: 40px; /* Espacio entre el video y la visión */
+}
+
+.div-nosotros-video,
+.div-nosotros-vision {
+  flex: 1;
+  min-width: 0;
+}
+
+.div-nosotros-vision {
+  padding: 30px 10px;
+  flex-direction: column;
+}
+
+p {
+  font-size: 16px;
+}
+
+.div-nosotros-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%; /* Más delgado */
+  height: 0;
+}
+
+.div-nosotros-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+section {
+  margin: auto;
+  padding: 20px;
+  max-width: 1330px;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative; /* Para el efecto de subrayado */
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #c8aa5b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Elimina el espacio extra debajo de las imágenes */
+}
+
+/* RESPONSIVE NOSOTROS — MÓVILES */
+@media (max-width: 56.25rem) {
+  /* CONTENEDOR PRINCIPAL */
+  .div-general-nosotros {
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 0;
+  }
+
+  .div-nosotros-texto,
+  .div-nosotros-mision,
+  .div-nosotros-vision {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px 18px;
+  }
+
+  /* VIDEO + VISIÓN */
+  .div-video-vision-container {
+    flex-direction: column; /* Se apilan */
+    margin: auto;
+  }
+
+  /* TEXTOS */
+  p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+}

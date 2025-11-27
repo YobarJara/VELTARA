@@ -1,0 +1,59 @@
+/* INICIO */
+.Inicio {
+  height: 38.7rem;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  position: relative;
+  padding-top: 5.6rem;
+  z-index: 1;
+}
+
+section {
+  width: 0 auto;
+  box-shadow: 0 0 2.8rem 0 rgb(166, 166, 166);
+}
+
+/* CAROUSEL */
+.carousel {
+  display: flex; /* imágenes en fila */
+  width: 400%; /* 4 imágenes */
+  height: 100%;
+  animation: slide 32s infinite; /* 4 imágenes × 8s cada una */
+}
+
+/* SLIDE */
+.slide {
+  width: 25%; /* 1 de 4 partes del carousel */
+  flex-shrink: 0; /* no se encoge */
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ANIMACIÓN DE DESPLAZAMIENTO LATERAL */
+@keyframes slide {
+  0%,
+  10% {
+    transform: translateX(-0.3%); /* primera imagen */
+  }
+  30%,
+  45% {
+    transform: translateX(-25%); /* segunda imagen */
+  }
+  50%,
+  70% {
+    transform: translateX(-50%); /* tercera imagen */
+  }
+  70%,
+  95% {
+    transform: translateX(-75%); /* cuarta imagen */
+  }
+  100% {
+    transform: translateX(0); /* vuelve a la primera */
+  }
+}

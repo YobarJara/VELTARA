@@ -1,0 +1,125 @@
+.Reservar {
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.Reservar h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.Reservar h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #c8aa5b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* GRID 3 COLUMNAS */
+.reservar-datos form,
+.reservar-cantidad form {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* INPUTS */
+.form-grupo input,
+.form-grupo select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d5d5d5;
+  background: #f6f6f6;
+  font-size: 16px;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus {
+  outline: none;
+  border-color: #c8aa5b;
+  box-shadow: 0 0 8px rgba(200, 170, 91, 0.4);
+}
+
+/* LABELS */
+.form-grupo label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* FECHAS */
+.reservar-fecha {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* LISTAS */
+.listar-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: no;
+}
+
+/* BOTÓN RESERVAR */
+.boton-reservar {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.boton-reservar button {
+  background: #c8aa5b;
+  padding: 14px 55px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.boton-reservar button:hover {
+  background: #b19147;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 48rem) {
+  .reservar-datos form,
+  .reservar-cantidad form {
+    grid-template-columns: 1fr; /* UNA COLUMNA */
+    gap: 18px;
+  }
+
+  .reservar-fecha {
+    grid-template-columns: 1fr; /* UNA COLUMNA */
+  }
+
+  .form-grupo input,
+  .form-grupo select {
+    padding: 14px;
+    font-size: 17px;
+  }
+
+  .form-grupo label {
+    font-size: 16px;
+  }
+
+  .listar-checkbox li,
+  .lista-radio li {
+    font-size: 16px;
+  }
+
+  .boton-reservar button {
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;
+  }
+}

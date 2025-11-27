@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VELTARA</title>
+    <link rel="stylesheet" href="Menu.css" />
+    <link rel="stylesheet" href="Inicio.css" />
+    <link rel="stylesheet" href="Nosotros.css" />
+    <link rel="stylesheet" href="HabitacionesSuites.css" />
+    <link rel="stylesheet" href="Reservar.css" />
+    <link rel="stylesheet" href="Contactos.css"/>
+    <link rel="stylesheet" href="Footer.css" />
+    
+  </head>
+  <body>
+    <!-- MENÚ SUPERIOR -->
+    <nav class="TopHeader">
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <img src="Img/Logo.png" width="150px" height="150px" alt="logo" />
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+      
+      <!-- MENÚ HORIZONTAL -->
+      <ul class="Menu-Horizontal">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li>
+          <a href="#habitacion">Habitaciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#Hdeluxe">Deluxe Room</a></li>
+            <li><a href="#Hsuperior">Superior Room</a></li>
+            <li><a href="#Hpremier">Premier Room</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#suites">Suites</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#Sdeluxe">Deluxe Suite</a></li>
+            <li><a href="#Spanoramic">Panoramic Suite</a></li>
+            <li><a href="#Spresidential">Presidential Suite</a></li>
+          </ul>
+        </li>
+        <li><a href="#reservar">Reservar</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <!-- INICIO -->
+    <section class="Inicio">
+      <div class="carousel">
+        <div class="slide"><img src="Img/Inicio1.png" alt="Inicio 1" /></div>
+        <div class="slide"><img src="Img/inicio2.jpg" alt="Inicio 2" /></div>
+        <div class="slide"><img src="Img/inicio3.jpg" alt="Inicio 3" /></div>
+        <div class="slide"><img src="Img/inicio4.jpg" alt="Inicio 4" /></div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="Nosotros">
+      <div class="div-general-nosotros">
+        <div class="div-nosotros-texto">
+          <h2>Nosotros</h2>
+          <p>
+            En VELTARA, redefinimos el lujo a través de espacios diseñados con
+            elegancia, confort y un servicio personalizado que conecta a cada
+            huésped con el arte, cultura y el entorno.
+          </p>
+
+          <p>
+            Más que un hospedaje, somos una experiencia única donde la
+            excelencia se vuelve natural.
+          </p>
+        </div>
+
+        <div class="div-nosotros-mision">
+          <h2>Mision</h2>
+          <p>
+            Ofrecer experiencias de hospedaje excepcionales, fusionado con
+            diseño contemporáneo, hospitalidad autentica y estándares de clase
+            mundial, para crear espacios memorables donde cada huésped se sienta
+            único, valorado y conectado con el entorno.
+          </p>
+        </div>
+      </div>
+
+      <div class="div-video-vision-container">
+        <div class="div-nosotros-vision">
+          <h2>Vision</h2>
+          <p>
+            Ser conocidos globalmente como una marca hotelera sinónimo de lujo
+            moderno, innovación y excelencia, expandiendo nuestra presencia en
+            destinos clave del mundo, y dejando huella positiva en cada
+            comunidad donde operamos.
+          </p>
+        </div>
+
+        <div class="div-nosotros-video">
+          <iframe
+            width="530"
+            height="290"
+            src="https://www.youtube.com/embed/V2zpLzoJBuQ?si=QlmrIzK89F1kEM2o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABITACIONES -->
+    <section id="habitacion" class="habitaciones">
+      <h2>Habitaciones que despiertan tus sentidos</h2>
+    
+      <!-- Deluxe -->
+      <div class="habitacion-item">
+        <div class="Room">
+          <h4>Deluxe Room</h4>
+          <p>Confort elevado con detalles de diseño contemporáneo.</p>
+        </div>
+    
+        <div id="Hdeluxe" class="Deluxe-img">
+          <img src="Img/deluxe 2.jpg" alt="Deluxe">
+        </div>
+      </div>
+    
+      <!-- Superior -->
+      <div id="Hsuperior" class="habitacion-item">
+        <div class="superior-img">
+          <img src="Img/superior 2.jpg" alt="superior">
+        </div>
+    
+        <div class="Room">
+          <h4>Superior Room</h4>
+          <p>Elegancia funcional, ideal para viajeros exigentes.</p>
+        </div>
+      </div>
+    
+      <!-- Premier -->
+      <div id="Hpremier" class="habitacion-item">
+        <div class="Room">
+          <h4>Premier Room</h4>
+          <p>Espacio y estilo en perfecta armonía.</p>
+        </div>
+    
+        <div class="premier-img">
+          <img src="Img/Premier 4.jpg" alt="premier">
+        </div>
+      </div>
+    </section>    
+
+    <!-- SUITES -->
+    <section id="suites" class="Suites">
+      <h2>Consiente tu cuerpo y alma</h2>
+    
+      <!-- Deluxe Suite -->
+      <div id="Sdeluxe" class="suite-item">
+        <div class="Room">
+          <h4>Deluxe Suite</h4>
+          <p>Sofisticación y amplitud pensadas para negocios y placer</p>
+        </div>
+    
+        <div class="Deluxe-img">
+          <img src="Img/DeluxeSuite 4.jpg" alt="deluxe">
+        </div>
+      </div>
+    
+      <!-- Panoramic Suite -->
+      <div id="Spanoramic" class="suite-item">
+        <div class="panoramic-img">
+          <img src="Img/PanoramicSuite 2.jpg" alt="panoramic">
+        </div>
+    
+        <div class="Room">
+          <h4>Panoramic Suite</h4>
+          <p>Vistas panorámicas, interiores de lujo y privacidad absoluta</p>
+        </div>
+      </div>
+    
+      <!-- Presidential Suite -->
+      <div id="Spresidential" class="suite-item">
+        <div class="Room">
+          <h4>Presidential Suite</h4>
+          <p>Un universo privado de distinción, servicio y estilo</p>
+        </div>
+    
+        <div class="persidential-img">
+          <img src="Img/PresidentialSuite 1.jpg" alt="presidential">
+        </div>
+      </div>
+    </section>    
+
+    <!-- RESERVAR -->
+    <section id="reservar" class="Reservar">
+      <h2>Realiza tu reserva aquí</h2>
+    
+      <!-- DATOS PERSONALES -->
+      <div class="reservar-datos">
+        <form class="form-reserva" id="formulario-reserva" name="form-reserva">
+    
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="Nombres" placeholder="Ingrese sus nombres">
+          </div>
+    
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="Apellidos" placeholder="Ingrese sus apellidos">
+          </div>
+    
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+          </div>
+    
+          <!-- CORREO -->
+          <div class="form-grupo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
+          </div>
+
+        </form>
+      </div>
+    
+      <!-- CANTIDAD / FECHAS / PAÍS -->
+      <div class="reservar-cantidad">
+        <form>
+    
+          <!-- CHECKBOX ADULTOS -->
+          <div class="form-grupo">
+            <label>Número de adultos:</label>
+    
+            <ul class="listar-checkbox">
+              <li><label><input type="checkbox" name="adultos" value="1"> 1 Adulto</label></li>
+            </ul>
+    
+            <ul class="listar-checkbox">
+              <li><label><input type="checkbox" name="adultos" value="2"> 2 Adultos (12 años a más)</label></li>
+            </ul>
+    
+            <ul class="listar-checkbox">
+              <li><label><input type="checkbox" name="adultos" value="3"> 3 Adultos (12 años a más)</label></li>
+            </ul>
+          </div>
+    
+          <!-- RADIO NIÑOS -->
+          <div class="form-grupo">
+            <label>Número de niños:</label>
+    
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="niños" value="1"> 1 Niño</label></li>
+            </ul>
+    
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="niños" value="2"> 2 Niños (0 a 11 años)</label></li>
+            </ul>
+          </div>
+    
+          <!-- FECHAS -->
+          <div class="reservar-fecha">
+            <div class="form-grupo">
+              <label for="fecha-inicio">Fecha de Inicio:</label>
+              <input type="date" id="fecha-inicio" name="fecha-inicio">
+            </div>
+    
+            <div class="form-grupo">
+              <label for="fecha-fin">Fecha de Fin:</label>
+              <input type="date" id="fecha-fin" name="fecha-fin">
+            </div>
+          </div>
+    
+          <!-- PAÍS -->
+          <div class="form-grupo>
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Perú">Perú</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brasil">Brasil</option>
+            </select>
+          </div>
+        
+        </form>
+
+        <div class="boton-reservar">
+            <button type="submit">RESERVAR</button>
+          </div>
+
+      </div>
+    </section>    
+
+    <!-- CONTACTOS -->
+    <section id="contactos" class="Contactos">
+      <h2>¿Como podemos ayudarte?</h2>
+      <h3>Mas información:</h3>
+      <div class="contactos-contenido">
+        <div class="contactos-texto">
+          <p>Teléfono: (01)6128005</p>
+          <p>Hotel: (085)256900</p>
+          <p>Email: recepcion@veltara.com</p>
+        </div>
+        
+        <form class="formulario-contacto" id="formularioContacto" name="frm">
+          <p>Por favor, dejanos tus datos para poder comunicarnos contigo</p>
+          <div class="campo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" />
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +51 987654321"/>
+
+            <div class="form-grupo">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ingrese texto aqui..."></textarea>
+            </div>
+
+          <!-- CHECKBOX -->
+          <div class="campo">
+            <ul class="listar-checkbox">
+                <label>
+                  <input type="checkbox" name="terminos" value="términos y condiciones"
+                  /> Acepto los términos y condiciones</label>
+            </ul>
+          </div>
+
+          <!-- BOTTON -->
+          <button type="button">Enviar</button>
+          
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="Img/Logo.png" alt="Logo" class="footer-logo" />
+            <p>VELTARA</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="Doc/POLÍTICA DE PRIVACIDAD.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="Doc/TERMINOS Y CONDICIONES.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="Doc/PROTECCIÓN DE DATOS.pdf"
+              >Protección de Datos</a
+            >
+          </div>
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                alt="Facebook"
+                class="social-icon"/></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+                class="social-icon"/></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"/></a>
+            <a href="#"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZd7mszoX8inKkbUKb6ffie8YF2-c00RL7w&s"
+                alt="TikTok"
+                class="social-icon"/></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Science+Gothic:wght@100..900&display=swap");
+/* CONTACTANOS */
+.Contactos {
+  font-family: "Science Gothic", sans-serif;
+}
+
+.Contactos h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Contactos h3 {
+  text-align: center;
+}
+
+.contactos-texto {
+  width: 440px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 rgb(166, 166, 166);
+}
+
+.formulario-contacto {
+  width: 500px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 rgb(166, 166, 166);
+}
+
+.contacto-instrucciones {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contactos-contenido {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacto-instrucciones {
+  flex: 1;
+  max-width: 350px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 0.25rem;
+}
+
+input {
+  margin: 5px;
+  padding: 6px 9px;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 470px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #c8aa5b;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1.5px;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 0 10px 0 rgb(166, 166, 166);
+  cursor: pointer;
+}
+
+/* MEDIA QUERY: RESPONSIVE MÓVILES */
+@media (max-width: 51.27rem) {
+  .Contactos {
+    padding: 0;
+    background: #ffffff;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .contactos-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contactos-texto {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .formulario-contacto {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+  }
+
+  .formulario-contacto p {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .campo input {
+    padding: 1rem;
+  }
+}
